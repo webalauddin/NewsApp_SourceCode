@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/NewsImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/alauddin"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/NewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="প্রচণ্ড গরমে শিশুরা বেশি কাবু ৫ রোগে"
+            android:background="#B0000000"
+            android:textSize="20sp"
+            android:textColor="#D7FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="3dp"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/NewsDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#C6000000"
+                android:textSize="18sp"
+                android:text="চেন্নাই সুপার কিংসের হয়ে আর তিন ম্যাচ খেলার সুযোগ পাবেন মুস্তাফিজুর রহমান। বিসিবি থেকে ১ মে পর্যন্ত অনাপত্তিপত্র দেওয়া হয়েছে তাঁকে। এরপরই আইপিএল থেকে দেশে ফিরবেন মুস্তাফিজ। মুস্তাফিজের বিদায়ে দুঃখ পাবেন বলে জানিয়েছেন চেন্নাইয়ের ব্যাটিং কোচ মাইক হাসি। আজ ঘরের মাঠ চিপকে লখনউ সুপার জায়ান্টসের বিপক্ষে মাঠে নামবে চেন্নাই। এই ম্যাচের আগে সংবাদ সম্মেলনে আইপিএলের মাঝপথে মুস্তাফিজের দেশে ফিরে যাওয়া প্রসঙ্গে এক প্রশ্নে হাসি বলেন, 'তার (মুস্তাফিজ) স্লোয়ার বলটা অসাধারণ, এটা খেলা বেশ কঠিন, বিশেষ করে চেন্নাইয়ে। যখন সে চলে যাবে, আমরা দুঃখ পাব। কিন্তু তার দেশ তাকে ডাকছে। সে যত দিন থাকতে পারবে, তত দিন আমরা তাকে রাখতে চাই। আমরা তার পারফরম্যান্সে বেশ খুশি। আজ লখনউ ম্যাচের পর আরো দুইটি ম্যাচে চেন্নাই সুপার কিংসের সঙ্গে থাকবেন মুস্তাফিজ। ২৮ এপ্রিল সানরাইজার্স হায়দরাবাদ ও ১ মে কিংস ইলেভেন পাঞ্জাবের বিপক্ষে মাঠে নামবে চেন্নাই। এখন পর্যন্ত সাত ম্যাচ খেলে পয়েন্ট টেবিলের চার নম্বরে আছে আইপিএল ইতিহাসের সবচেয়ে সফল দলটি। চার জয়ের পিঠে তিন ম্যাচ হেরেছে চেন্নাই। এক ম্যাচ ছাড়া সবগুলোতে একাদশে ছিলেন মুস্তাফিজ। এখন পর্যন্ত তাঁর শিকার ১১ উইকেট।"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/NewsMice"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/microphone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        app:neumorph_backgroundColor="#C51162"
+        android:padding="15dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+
+        />
+
+
+
+</RelativeLayout>
